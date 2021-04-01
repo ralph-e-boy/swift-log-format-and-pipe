@@ -3,9 +3,6 @@ import PackageDescription
 
 let package = Package(
     name: "swift-log-format-and-pipe",
-    platforms: [
-      .iOS(.v13), .tvOS(.v13), .watchOS(.v6), .macOS(.v10_15)
-    ],
     products: [
         .library(
             name: "LoggingFormatAndPipe",
