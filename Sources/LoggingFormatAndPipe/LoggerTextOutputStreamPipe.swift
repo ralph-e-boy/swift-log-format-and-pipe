@@ -14,7 +14,7 @@ import Glibc
 import Logging
 
 /// A pipe for sending logs to a `TextOutputStream`
-public struct LoggerTextOutputStreamPipe: Pipe {
+public struct LoggerTextOutputStreamPipe: LoggingStringHandler {
     private let stream: TextOutputStream
 
     /// Default init

@@ -9,7 +9,7 @@ import Foundation
 import LoggingFormatAndPipe
 import XCTest
 
-internal class HistoryPipe: LoggingFormatAndPipe.Pipe {
+internal class HistoryPipe: LoggingFormatAndPipe.LoggingStringHandler {
     var formattedLogLine = [String]()
 
     func handle(_ formattedLogLine: String) {

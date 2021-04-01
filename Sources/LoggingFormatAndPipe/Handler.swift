@@ -13,7 +13,7 @@ public struct Handler: LogHandler {
     /// - parameters:
     ///   - formatter: Formatter to format with
     ///   - pipe: PIpe to pipe to
-    public init(formatter: Formatter, pipe: Pipe) {
+    public init(formatter: Formatter, pipe: LoggingStringHandler) {
         self.formatter = formatter
         self.pipe = pipe
     }
@@ -22,7 +22,7 @@ public struct Handler: LogHandler {
     public let formatter: Formatter
 
     /// PIpe we're piping to
-    public let pipe: Pipe
+    public let pipe: LoggingStringHandler
 
     /// Log level specification, used by Logger to filter all log levels less severe then the specified
     public var logLevel: Logger.Level = .info
